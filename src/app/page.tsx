@@ -1,5 +1,11 @@
-import MainContainer from '@/features/mainContainer';
+import MainSection from '@/features/mainSection';
+import AboutSection from '@/features/aboutMeSection';
 
 export default function Home() {
-  return <MainContainer />;
+  return (
+    <>
+      <MainSection />
+      <AboutSection />
+    </>
+  );
 }

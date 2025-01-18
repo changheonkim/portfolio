@@ -4,7 +4,7 @@ import '../styles/globals.css';
 
 import { Nanum_Gothic } from 'next/font/google';
 
-import Navbar from '@/widgets/navbar/ui/Navbar';
+import Navbar from '@/widgets/navbar';
 
 const nanumGothic = Nanum_Gothic({
   variable: '--font-nanum-gothic',
