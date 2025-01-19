@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nanumGothic.variable} antialiased`}>
+      <body className={`${nanumGothic.variable} font-nanum antialiased`}>
         <Navbar />
         {children}
       </body>

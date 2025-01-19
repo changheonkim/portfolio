@@ -1,10 +1,11 @@
 import SectionContainer from '@/widgets/sectionContainer';
-import Title from '@/shared/ui/title/Title';
+import Title from '@/shared/ui/title';
 
 export default function AboutMeSection() {
   return (
-    <SectionContainer backgroundColor="bg-white">
+    <SectionContainer>
       <Title>ABOUT ME</Title>
+      <div></div>
     </SectionContainer>
   );
 }

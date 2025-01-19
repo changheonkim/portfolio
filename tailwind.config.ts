@@ -7,12 +7,16 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './src/widgets/**/*.{js,ts,jsx,tsx,mdx}',
     './src/features/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/shared/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
         background: 'var(--background)',
         foreground: 'var(--foreground)',
+      },
+      fontFamily: {
+        nanum: ['Nanum Gothic', 'sans-serif'], // 나눔고딕 추가
       },
     },
   },
