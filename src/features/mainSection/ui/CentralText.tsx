@@ -33,7 +33,7 @@ export const CentralText = () => {
         김창헌
       </motion.h1>
       <motion.p
-        className="mt-4 text-4xl  text-[#ADD8E6]"
+        className="mt-4 text-4xl text-[#40e0ff]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, delay: 3.6 }}
@@ -41,7 +41,7 @@ export const CentralText = () => {
         Frontend Developer
       </motion.p>
       <motion.p
-        className="mt-8 max-w-xl text-left text-[#97B6F1] text-xl leading-relaxed"
+        className="mt-4 max-w-xl text-left text-xl text-opacity-50 leading-relaxed text-[#dee2e6]"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, delay: 3.7 }}

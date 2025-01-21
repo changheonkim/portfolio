@@ -12,38 +12,38 @@ export default function Navbar() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, delay: 3.5 }}
       >
-        <div className="container mx-auto flex items-center justify-between w-[1200px] text-[#ADD8E6] font-bold py-4 px-6">
-          <a href="#home" className="hover:text-white text-xl text-[#97B6F1]">
+        <div className="container mx-auto flex items-center justify-between w-[1200px] text-[#dee2e6] font-bold py-4 px-6">
+          <a href="#home" className="hover:text-white text-xl text-[#40e0ff]">
             Naro's Portfolio
           </a>
           <div className="flex items-center gap-[14px]">
             <a
               href="#home"
-              className="hover:text-white transition-all duration-300"
+              className="hover:text-[#40e0ff] transition-all duration-300"
             >
               About me
             </a>
             <a
               href="#about"
-              className="hover:text-white transition-all duration-300"
+              className="hover:text-[#40e0ff] transition-all duration-300"
             >
               Skill
             </a>
             <a
               href="#contact"
-              className="hover:text-white transition-all duration-300"
+              className="hover:text-[#40e0ff] transition-all duration-300"
             >
               Archiving
             </a>
             <a
               href="#projects"
-              className="hover:text-white transition-all duration-300"
+              className="hover:text-[#40e0ff] transition-all duration-300"
             >
               Project
             </a>
             <a
               href="#career"
-              className="hover:text-white transition-all duration-300"
+              className="hover:text-[#40e0ff] transition-all duration-300"
             >
               Career
             </a>
