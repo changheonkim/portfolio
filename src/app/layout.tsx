@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 
 import '../styles/globals.css';
 
-import { Nanum_Gothic } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 
 import Navbar from '@/widgets/navbar';
 
-const nanumGothic = Nanum_Gothic({
-  variable: '--font-nanum-gothic',
-  subsets: ['latin'], // 필요한 문자 집합 (한글 지원 필요 시 추가)
-  weight: ['400', '700'], // 사용할 폰트 가중치 명시
+// Poppins 폰트 설정
+const poppins = Poppins({
+  variable: '--poppins', // CSS 변수 이름 수정
+  subsets: ['latin'], // 필요한 문자 집합 (한글 지원 필요 시 'latin-ext', 'korean' 추가)
+  weight: ['400', '700'], // 사용할 폰트 가중치
 });
 
 export const metadata: Metadata = {
@@ -24,7 +25,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${nanumGothic.variable} font-nanum antialiased`}>
+      <body
+        className={`${poppins.variable} font-sans antialiased bg-[#0F111A]`}
+      >
         <Navbar />
         {children}
       </body>
