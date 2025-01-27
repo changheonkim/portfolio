@@ -2,6 +2,7 @@ import MainSection from '@/features/mainSection';
 import AboutMeSection from '@/features/aboutMeSection';
 import SkillSection from '@/features/skillSection/SkillSection';
 import ProjectSection from '@/features/projectSection';
+import CareerSection from '@/features/careerSection';
 
 export default function Home() {
   // 랜덤 별 생성
@@ -37,6 +38,7 @@ export default function Home() {
         <AboutMeSection />
         <SkillSection />
         <ProjectSection />
+        <CareerSection />
       </div>
     </div>
   );
