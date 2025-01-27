@@ -1,12 +1,8 @@
-import SectionContainer from '@/widgets/sectionContainer';
-import Title from '@/shared/ui/title';
-
 export default function AboutMeSection() {
   return (
-    <SectionContainer>
-      <Title>ABOUT ME</Title>
-      <div className="w-full h-[700px] p-20 bg-white text-black rounded flex flex-col justify-center items-center">
-        <div className="w-[800px] h-[300px] font-[14px] flex justify-between items-center">
+    <div className="w-full h-screen flex justify-center items-center">
+      <div className="w-[80vw] h-[70vh] p-20 bg-white text-black rounded flex flex-col justify-center items-center">
+        <div className="w-[70vw] h-[60vh] font-[2em] flex justify-between items-center">
           <div className="w-[250px] h-[250px] overflow-hidden rounded-full">
             <img
               src="https://m.wmelonshop.com/web/product/big/20200330/0c283ec52c8dca480a81a7f73df2fc33.jpg"
@@ -29,19 +25,24 @@ export default function AboutMeSection() {
             </div>
           </div>
         </div>
-        <div className="w-[800px] font-[14px] mt-4 leading-8">
-          안녕하세요, 창의적이고 열정적인 주니어 프론트엔드 개발자 김창헌입니다.
+        <div className="w-[70vw] font-[2em] mt-4 leading-8">
+          안녕하세요. 2년 차 풀스택 개발자 김창헌입니다.
           <br />
-          최신 웹 기술을 바탕으로 UI/UX 디자인과 코드 최적화에 지속적으로
-          도전하고 있으며, 빠르게 변화하는 개발 환경에서 꾸준히 성장하고
-          있습니다. <br />
-          Vue.js, React, Tailwind CSS 등 다양한 도구와 프레임워크를 활용하여
-          직관적이고 반응형인 웹을 구현하는 데 자신감을 가지고 있습니다. <br />
-          프론트엔드 개발을 통해 세상을 더 나은 사용자 경험으로 채워 나가는 것이
-          제 목표입니다. <br />
-          지금까지의 경험과 앞으로의 여정을 함께 공유할 수 있기를 기대합니다.
+          Vue.js와 React.js를 활용해 안정적이고 빠른 서비스를 제공하는 데 자신이
+          있습니다.
+          <br />
+          프로젝트 유지보수 및 고도화 과정에서 레거시의 버그를 해결하고, <br />
+          페이지 로딩 시간을 5초에서 2초로 단축시키는 성과를 거뒀습니다.
+          <br />
+          특히, 운영 중인 챗봇 제작 플랫폼의 UI 개선을 주도하며 고객사가 1년간
+          약 137% 증가하는 데 기여했습니다.
+          <br />
+          앞으로도 팀원들과의 소통과 협업을 통해 더 나은 서비스를 만들어가는
+          개발자가 되겠습니다.
+          <br />
+          감사합니다.
         </div>
       </div>
-    </SectionContainer>
+    </div>
   );
 }
