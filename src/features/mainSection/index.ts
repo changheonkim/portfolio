@@ -1,1 +1,1 @@
-export { default } from './ui/MainContainer';
+export { default } from './ui/MainSection';
