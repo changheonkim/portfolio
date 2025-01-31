@@ -1,6 +1,6 @@
 import MainSection from '@/features/mainSection';
 import AboutMeSection from '@/features/aboutMeSection';
-import SkillSection from '@/features/skillSection/SkillSection';
+import SkillSection from '@/features/skillSection/ui/SkillSection';
 import ProjectSection from '@/features/projectSection';
 import CareerSection from '@/features/careerSection';
 
