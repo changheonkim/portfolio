@@ -2,15 +2,14 @@ import type { Metadata } from 'next';
 
 import '../styles/globals.css';
 
-import { Poppins } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
 import Navbar from '@/widgets/navbar';
 
-// Poppins 폰트 설정
-const poppins = Poppins({
-  variable: '--poppins', // CSS 변수 이름 수정
+const montserrat = Montserrat({
+  variable: '--montserrat', // CSS 변수 이름 수정
   subsets: ['latin'], // 필요한 문자 집합 (한글 지원 필요 시 'latin-ext', 'korean' 추가)
-  weight: ['400', '700'], // 사용할 폰트 가중치
+  weight: ['500', '600', '700'], // 사용할 폰트 가중치
 });
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} font-sans antialiased bg-[#0F111A]`}
+        className={`${montserrat.className} font-sans antialiased bg-[#0F111A]`}
       >
         <Navbar />
         {children}
