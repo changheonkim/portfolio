@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 export const NavbarHelper = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const lastScrollY = useRef(0); // useRef로 변경 (리렌더링 방지)
+  const lastScrollY = useRef(0); // 리렌더링 방지
 
   useEffect(() => {
     const handleScroll = () => {
