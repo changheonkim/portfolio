@@ -12,7 +12,7 @@ export default function Navbar() {
       }`}
     >
       <nav>
-        <div className="container mx-auto flex items-center justify-between w-full text-[#dee2e6] py-4 px-6">
+        <div className="w-[90vw] container mx-auto flex items-center justify-between w-full text-[#dee2e6] py-4 px-6">
           <a href="#home" className="hover:text-white text-xl text-white">
             Naro's Portfolio
           </a>

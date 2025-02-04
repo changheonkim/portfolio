@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <div className="relative h-screen w-screen bg-[#0F111A]">
+    <div className="bg-[#0F111A] flex flex-col gap-[12px]">
       <div className="stars-container">
         {generateStars(100)}
         <MainSection />
