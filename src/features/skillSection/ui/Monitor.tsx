@@ -1,3 +1,6 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 import { MonitorProps } from '../model/Monitor.type';
 
 export default function Monitor({
@@ -6,10 +9,20 @@ export default function Monitor({
   width,
   height,
   barPercent,
-  windowPercent,
 }: MonitorProps) {
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.3 });
+
   return (
-    <div
+    <motion.div
+      ref={ref}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={inView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
+      transition={{
+        duration: 0.6,
+        ease: 'easeOut',
+        type: 'spring',
+        stiffness: 40,
+      }}
       className={`w-full h-[${height}] border-2 rounded-lg border-[#D1D3D6] flex flex-col box-border overflow-hidden`}
     >
       {/* 상단 영역 */}
@@ -26,10 +39,10 @@ export default function Monitor({
 
       {/* 하단 영역 */}
       <div
-        className={`w-full h-${windowPercent} bg-inherit text-white flex items-center pl-4`}
+        className={`w-full h-full bg-inherit text-white flex items-center pl-4`}
       >
         {children}
       </div>
-    </div>
+    </motion.div>
   );
 }

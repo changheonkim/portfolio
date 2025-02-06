@@ -4,5 +4,4 @@ export type MonitorProps = {
   width: string;
   height: string;
   barPercent: string;
-  windowPercent: string;
 };
