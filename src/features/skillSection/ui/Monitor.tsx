@@ -19,7 +19,7 @@ export default function Monitor({ kind, children, barPercent }: MonitorProps) {
         type: 'spring',
         stiffness: 40,
       }}
-      className="w-full h-[12vh] border-2 rounded-lg border-[#D1D3D6] flex flex-col box-border overflow-hidden"
+      className="w-full h-[12vh] border-2 rounded-lg border-[#D1D3D6] bg-black flex flex-col box-border overflow-hidden"
     >
       {/* 상단 영역 */}
       <div

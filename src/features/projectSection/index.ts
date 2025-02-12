@@ -1,1 +1,1 @@
-export { default } from './ProjectSection';
+export { default } from './ui/ProjectSection';
