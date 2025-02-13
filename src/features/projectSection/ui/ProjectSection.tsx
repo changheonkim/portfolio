@@ -7,7 +7,7 @@ import SectionContainer from '@/widgets/sectionContainer';
 import Monitor from './Monitor';
 
 export default function ProjectSection() {
-  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 });
+  const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.1 });
 
   return (
     <motion.div
@@ -17,7 +17,7 @@ export default function ProjectSection() {
       transition={{ type: 'spring', stiffness: 70, damping: 15 }}
     >
       <SectionContainer>
-        <div className="w-full bg-gray-200 p-[40px] pt-[80px] pb-[80px] flex flex-col items-center gap-[5vh]">
+        <div className="w-full bg-gray-200 pt-[15vh] pb-[15vh] flex flex-col items-center gap-[10vh]">
           <Monitor />
           <Monitor />
           <Monitor />
